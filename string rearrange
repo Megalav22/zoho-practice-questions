@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.io.*;
+public class RearrangeStr {
+	
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String arr[]=new String[5];
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=sc.next();
+		}
+		int i;
+		for(i=0;i<arr.length;i++) {
+			if(i%2==0) {
+				System.out.print(arr[i]);
+				System.out.print(" ");
+			}
+			else {
+				int j=arr[i].length();
+				for( int k=j-1;k>=0;k--) {
+					System.out.print(arr[i].charAt(k));
+				}
+				System.out.print(" ");
+				
+			}
+		}
+	}
+
+}
+
+
+ip
+one two three four five
+op
+five ruof three owt one
